@@ -1,4 +1,4 @@
-package frontback;
+package codingbat.warmup1.frontback;
 
 public class FrontBack {
     public static String frontBack(String str) {

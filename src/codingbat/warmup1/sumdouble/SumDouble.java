@@ -1,6 +1,6 @@
 package codingbat.warmup1.sumdouble;
 
-public class sumDouble {
+public class SumDouble {
     public int sumDouble(int a, int b) {
         if(a == b){
             return (a+b)*2;

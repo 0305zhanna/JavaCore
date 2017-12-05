@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaCurrencyFormatter;
+package hackerrank.Java.Introduction.JavaCurrencyFormatter;
 
 import java.util.*;
 import java.text.*;

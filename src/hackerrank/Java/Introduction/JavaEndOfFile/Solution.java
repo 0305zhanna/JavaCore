@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaEndOfFile;
+package hackerrank.Java.Introduction.JavaEndOfFile;
 
 import java.util.Scanner;
 

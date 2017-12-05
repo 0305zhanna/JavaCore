@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaDateandTime;
+package hackerrank.Java.Introduction.JavaDateandTime;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaIfElse;
+package hackerrank.Java.Introduction.JavaIfElse;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaLoopsI;
+package hackerrank.Java.Introduction.JavaLoopsI;
 
 import java.util.Scanner;
 

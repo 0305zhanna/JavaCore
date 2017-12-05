@@ -1,4 +1,4 @@
-package hackerrank.Introduction.JavaInttoString;
+package hackerrank.Java.Introduction.JavaInttoString;
 
 import java.util.Scanner;
 

@@ -10,9 +10,12 @@ public class Solution {
         int testCases = Integer.parseInt(in.nextLine());
         while(testCases>0){
             String pattern = in.nextLine();
-            Pattern p = Pattern.compile("\\d");
-            Matcher m = p.matcher(pattern);
-            System.out.println(m.matches());
+            try {
+                Pattern p = Pattern.compile(pattern);
+                System.out.println("Valid");
+            }catch (Exception e){
+                System.out.println("Invalid");
+            }
             testCases--;
         }
     }

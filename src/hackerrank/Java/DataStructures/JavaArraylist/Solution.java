@@ -11,6 +11,7 @@ public class Solution {
         List<int[]> list = new ArrayList<>();
         for (int i = 0; i<n;i++){
             int d = in.nextInt();
+            System.out.println(d);
             list.add(new int[d]);
             for (int j = 0; j < d;j++){
                 list.get(i)[j] = in.nextInt();

@@ -3,10 +3,10 @@ package hackerrank.Java.DataStructures.JavaPriorityQueue;
 import java.util.*;
 
 public class Solution {
-    private final static Scanner scan = new Scanner(System.in);
     private final static Priorities priorities = new Priorities();
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         int totalEvents = Integer.parseInt(scan.nextLine());
         List<String> events = new ArrayList<>();
 
@@ -26,25 +26,22 @@ public class Solution {
         }
     }
 }
-class Student implements Comparable {
+class Student implements Comparable{
     private int id;
     private String fname;
     private double cgpa;
-
     public Student(int id, String fname, double cgpa) {
+        super();
         this.id = id;
         this.fname = fname;
         this.cgpa = cgpa;
     }
-
     public int getId() {
         return id;
     }
-
     public String getName() {
         return fname;
     }
-
     public double getCgpa() {
         return cgpa;
     }
@@ -52,17 +49,17 @@ class Student implements Comparable {
     @Override
     public int compareTo(Object o) {
         Student s1 = (Student) o;
-        if (s1.getCgpa() == this.cgpa) {
-            if (this.fname.equals(s1.getName())) {
-                if (this.id == s1.getId())
+        if(s1.getCgpa() == this.cgpa){
+            if(this.fname.equals(s1.getName())){
+                if(this.id == s1.getId())
                     return 0;
                 else
                     return this.id > s1.id ? -1 : 1;
-            } else {
+            }else {
                 return this.fname.compareTo(s1.getName());
             }
-        } else {
-            return this.cgpa > s1.getCgpa() ? -1 : 1;
+        }else {
+            return this.cgpa > s1.getCgpa() ? -1:1;
         }
     }
 }
@@ -78,6 +75,10 @@ class Priorities{
                 priorityQueue.poll();
             }
         }
-        return new ArrayList(Arrays.asList(priorityQueue.toArray()));
+        List<Student> list = new ArrayList<>();
+        while (priorityQueue.size() != 0){
+            list.add(priorityQueue.poll());
+        }
+        return list;
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Solution {
-    public static void main(String[] args) {
+    public static void main() {
         Scanner sc = new Scanner(System.in);
 
         while (sc.hasNext()) {
@@ -23,26 +23,26 @@ public class Solution {
                         stack.add('[');
                         break;
                     case ')':
-                        if(stack.size()>0){
-                            if(stack.get(stack.size()-1) == '(')
-                                stack.remove(stack.size()-1);
-                        }
+                        isClosingCharacter(stack, ')', '(');
                         break;
                     case '}':
-                        if(stack.size()>0) {
-                            if (stack.get(stack.size()-1) == '{')
-                                stack.remove(stack.size()-1);
-                        }
+                        isClosingCharacter(stack, '}', '{');
                         break;
                     case ']':
-                        if(stack.size()>0) {
-                            if (stack.get(stack.size()-1) == '[')
-                                stack.remove(stack.size()-1);
-                        }
+                        isClosingCharacter(stack, ']', '[');
                         break;
                 }
             }
             System.out.println(stack.isEmpty());
+        }
+    }
+
+    private static void isClosingCharacter(List<Character> stack, Character c,Character unc ) {
+        if(stack.size()>0){
+            if(stack.get(stack.size()-1) == unc)
+                stack.remove(stack.size()-1);
+        }else {
+            stack.add(c);
         }
     }
 }

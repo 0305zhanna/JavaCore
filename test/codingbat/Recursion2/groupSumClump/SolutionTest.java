@@ -1,4 +1,4 @@
-package codingbat.Recursion2.groupSum6;
+package codingbat.Recursion2.groupSumClump;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,21 +16,21 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        assertEquals(true,s.groupSum6(0,new int[]{5,6,2},8));
+        assertEquals(true, s.groupSumClump(0, new int[]{2, 4, 8}, 10));
     }
 
     @Test
     public void test2() {
-        assertEquals(false,s.groupSum6(0,new int[]{5,6,2},9));
+        assertEquals(true, s.groupSumClump(0, new int[]{1, 2, 4, 8, 1}, 14));
     }
 
     @Test
     public void test3() {
-        assertEquals(false,s.groupSum6(0,new int[]{5,6,2},7));
+        assertEquals(false, s.groupSumClump(0, new int[]{2, 4, 4, 8}, 14));
     }
 
     @Test
     public void test4() {
-        assertEquals(true,s.groupSum6(0,new int[]{5,6,2,6,3,4},16));
+        assertEquals(true, s.groupSumClump(0, new int[]{8, 2, 2, 1}, 9));
     }
 }

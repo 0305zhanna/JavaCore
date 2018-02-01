@@ -18,7 +18,7 @@ public class Solution {
         for(int i = 1; i<s.length()-k+1; i++){
             smallest = (smallest.compareTo(s.substring(i,i+k))>0) ? s.substring(i,i+k) : smallest;
             largest = (largest.compareTo(s.substring(i,i+k))<0) ? s.substring(i,i+k) : largest;
-         //   System.out.println(s.substring(i,i+k));
+         //   System.out.unsafePrintln(s.substring(i,i+k));
         }
         return smallest + "\n" + largest;
     }

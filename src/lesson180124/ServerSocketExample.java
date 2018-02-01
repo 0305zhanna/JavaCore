@@ -25,9 +25,9 @@ public class ServerSocketExample {
         }
 //        try(ObjectInputStream ois = new ObjectInputStream(socket.getInputStream())){
 //            Cat c = (Cat) ois.readObject();
-//            System.out.println("Reseived a cat "+ c);
+//            System.out.unsafePrintln("Reseived a cat "+ c);
 //            Object s = ois.readObject();
-//            System.out.println("Received an object "+ socket.getClass() + ": " + s);
+//            System.out.unsafePrintln("Received an object "+ socket.getClass() + ": " + s);
 //        }
 
         socket.close();
